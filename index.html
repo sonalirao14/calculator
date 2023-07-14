@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@700&family=Fasthand&family=Josefin+Sans:wght@500&family=Kanit:wght@500&family=Montserrat:wght@600;800&family=Noto+Sans+Symbols&family=Noto+Serif:ital@1&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<h1>
+    This is only design of a calculator.
+</h1>
+<body>
+
+
+    <div class="hr-center" style="margin: 20px;">
+        <hr>
+    </div>
+    <div class="container">
+<div class="Calculator">
+    <input type="text" placeholder="0" id="output-Screen">
+    <button oneclick="clear()">Cl</button>
+    <button oneclick="delete()"><Del></button>
+    <button oneclick="display('%')">%</button>
+    <button oneclick="display('/')">/</button>
+    <button oneclick="display('1')">1</button>
+    <button oneclick="display('4')">4</button>
+    <button oneclick="display('7')">7</button>
+    <button oneclick="display('*')">*</button>
+    <button oneclick="display('2')">2</button>
+    <button oneclick="display('5')">5</button>
+    <button oneclick="display('8')">8</button>
+    <button oneclick="display('-')">-</button>
+    <button oneclick="display('3')">3</button>
+    <button oneclick="display('6')">6</button>
+    <button oneclick="display('9')">9</button>
+    <button oneclick="display('+')">+</button>
+    <button oneclick="display('.')">.</button>
+    <button oneclick="display('0')">0</button>
+    <button oneclick="calculate()" class="equal">=</button>
+
+</div>
+
+    </div>
+    <script>
+        let outputScreen = document.getElementById("output-Screen");
+         
+        function display(num){
+            outputScreen.value += num;
+        }
+        function clear(){
+            outputScreen.value="";
+            
+        }
+    </script>
+</body>
+</html>
